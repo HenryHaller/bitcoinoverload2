@@ -30,7 +30,7 @@ append :linked_files, "puma.rb"
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "shared"
 
 # Default value for default_env is {}
-set :default_env, { path: "~/rbenv/bin:$PATH" }
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
@@ -40,3 +40,5 @@ set :default_env, { path: "~/rbenv/bin:$PATH" }
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
+set :rbenv_ruby, '2.4.2'
