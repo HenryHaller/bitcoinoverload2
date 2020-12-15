@@ -59,3 +59,6 @@ server "raspberrypi.henryhaller.com",
     auth_methods: %w(publickey)
     # password: "please use keys"
   }
+
+set :puma_conf, "#{shared_path}/config/puma.rb"
+set :puma_service_unit_name, "puma_bitcoinoverload2"
