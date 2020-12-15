@@ -24,7 +24,7 @@ set :deploy_to, "~/deploy/bitcoinoverload2"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "puma.rb"
-append :linked_files, "puma.rb"
+append :linked_files, "config/puma.rb"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "shared"
@@ -41,4 +41,4 @@ append :linked_files, "puma.rb"
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
-set :rbenv_ruby, '2.4.2'
+set :rbenv_ruby, '2.7.2'
