@@ -33,9 +33,10 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+gem 'capistrano3-puma' , group: :development
+
 group :development do
   gem "capistrano", "~> 3.14"
-  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
   gem "ed25519", "~> 1.2"
   gem "bcrypt_pbkdf", "~> 1.0"
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
