@@ -44,5 +44,5 @@ set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends o
 set :rbenv_ruby, '2.7.2'
 
 set :default_env, { 
-  'RAILS_PRODUCTION_KEY' => IO.read Rails.root.join('config', 'credentials', 'production.key')
+  'RAILS_PRODUCTION_KEY' => IO.read(Rails.root.join('config', 'credentials', 'production.key'))
 }
