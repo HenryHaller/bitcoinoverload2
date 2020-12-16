@@ -42,3 +42,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 # set :ssh_options, verify_host_key: :secure
 set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
 set :rbenv_ruby, '2.7.2'
+
+set :default_env, { 
+  'RAILS_PRODUCTION_KEY' => IO.read Rails.root.join('config', 'credentials', 'production.key')
+}
