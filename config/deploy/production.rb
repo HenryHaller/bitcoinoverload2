@@ -61,4 +61,4 @@ server "raspberrypi.henryhaller.com",
   }
 
 set :puma_conf, "#{shared_path}/config/puma.rb"
-set :puma_service_unit_name, "puma_bitcoinoverload2"
+set :puma_service_unit_name, "puma_bitcoinoverload"
