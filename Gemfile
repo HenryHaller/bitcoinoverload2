@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'capistrano-rbenv', '~> 2.2'
+
+gem "capistrano-rails", "~> 1.6"
